@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Loading Popup -->
+    <div class="loader-overlay" id="loader">
+        <div class="loader-popup">
+            <div class="spinner"></div>
+            <p>Loading, please wait...</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="nav-bar">
+            <h1>Job Market</h1>
+            <button>Login</button>
+        </nav>
+        <div class="job-container">
+            <div class="search-container">
+                <form action="" method="post" id="jobSearchForm">
+                    <div class="field-set">
+                        <input type="text" name="job_role" list="job-role-list" id="job_role"
+                            placeholder="Enter your job role">
+                        <datalist id="job-role-list">
+                            <option value="GenAI"></option>
+                            <option value="Agentic AI"></option>
+                            <option value="LLM"></option>
+                            <option value="AI"></option>
+                            <option value="FullStack"></option>
+                            <option value="Software Developer"></option>
+                            <option value="AI Engineer"></option>
+                        </datalist>
+                    </div>
+                    <div class="field-set">
+                        <input type="text" name="city" list="city-list" id="city" placeholder="Preferred city">
+                        <datalist id="city-list">
+                            <option value="Chennai"></option>
+                            <option value="Bengaluru"></option>
+                            <option value="Mumbai"></option>
+                            <option value="Delhi"></option>
+                            <option value="Hyderabad"></option>
+                            <option value="Pune"></option>
+                            <option value="Coimbatore"></option>
+                        </datalist>
+                    </div>
+                    <div class="field-set">
+                        <input type="text" name="salary" id="salary" placeholder="Minimum Expected Salary">
+                    </div>
+
+                    <div class="field-set">
+                        <input type="text" name="level" list="level-list" id="level" placeholder="What is your level?">
+                        <datalist id="level-list">
+                            <option value="Lead+"></option>
+                            <option value="Lead"></option>
+                            <option value="Senior"></option>
+                            <option value="Mid"></option>
+                            <option value="Junior"></option>
+                            <option value="Intern"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="field-set">
+                        <label for="remote" class="check">
+                            <input type="checkbox" name="remote" id="remote">
+                            Remote option?
+                        </label>
+                    </div>
+                    <button type="submit">Find Jobs</button>
+                </form>
+            </div>
+            <div class="result-container" id="resultContainer">
+                <!-- <span class="loader" id="loader"><i class="fa-solid fa-spinner fa-spin" id="spinner"></i></span>
+                <span class="error" id="error">Error</span> -->
+                    <!-- <div class="job-card">
+                    <div class="card-head">
+                        <h3>Sr. Data Scientist</h3>
+                        <span>2026-11-09</span>
+                    </div>
+                    <p><i class="fa-regular fa-building"></i> BrandIdea Consultancy Pvt Ltd</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu</p>
+                    <p><i class="fa-solid fa-money-check-dollar"></i> ₹2,00,000 - ₹3,00,000 a month - Permanent, Full-time</p>
+                    <a href="#" class="apply-btn">Apply now</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
